@@ -1,0 +1,107 @@
+# 📝 Task Manager Web App
+
+A clean, modern, feature-rich To-Do & Task Manager Web App built using only vanilla JavaScript, HTML5, CSS3, and Bootstrap 5 — no frameworks, no libraries.  
+All UI and logic are fully JS-driven, even the HTML structure is dynamically generated.
+
+---
+
+## 🚀 Features
+
+### ✅ Add, Edit & Delete Tasks
+- Add tasks with:
+  - Unique ID
+  - Name
+  - Description
+  - Date & Time
+  - (Optional) Image URL
+- Edit tasks inline.
+- Soft-delete (mark for deletion), with batch delete capability.
+
+### 🗓️ Smart Date & Time Integration
+- Schedule tasks with specific date and time.
+- Each task auto-generates a UNIX timestamp.
+- Designed for calendar integrations and automation tools.
+
+### 📡 AutoRemote Integration (Task Automation)
+- On "Save", each task with a date/time sends a message to [AutoRemote](https://joaoapps.com/autoremote/) with:
+  - Timestamp
+  - Task name
+  - Description
+- Use to trigger reminders or automate notifications on Android phones.
+
+### 💾 Local Storage Support
+- All tasks are saved to your browser’s localStorage.
+- Load previously saved tasks anytime.
+- Fully offline-capable — no backend required.
+
+### 🌐 Load from Server (Optional)
+- Fetch tasks from a local `tasks.json` file.
+- Useful for demos or mock APIs.
+
+### 💡 Smart UI & UX
+- Live task counters:
+  - Total Tasks
+  - Marked for Deletion
+  - Remaining Tasks
+- Live photo previews (if image URL provided).
+- Responsive for mobile/tablet.
+- Animated buttons and click effects.
+
+### 🌈 Modern UI Design
+- Built with Bootstrap 5
+- Custom CSS for:
+  - Animated buttons
+  - Icon-based editing/deleting
+  - Responsive layout
+
+---
+
+## 🔐 AutoRemote Key Configuration
+
+To enable AutoRemote:
+1. Get your AutoRemote key from [here](https://joaoapps.com/autoremote/).
+2. Replace the `key=` value inside the `sendToAutoRemote()` function in the source code with your own key.
+
+That’s it! Saving tasks will now trigger remote messages.
+
+---
+
+## 🏠 Screenshots
+
+<!-- Add screenshots here if available -->
+- **Home Page**
+
+- **Add Task Preview**
+
+---
+
+## 🛠️ Installation & Usage
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/Chandan98S/To-Do-Application.git
+   cd To-Do-Application
+   ```
+2. **Open `index.html` in your browser.**
+   - No server or build steps needed; everything runs in the browser.
+3. **(Optional) To enable server loading:**
+   - Place a valid `tasks.json` in your project root and serve with [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) or any static server.
+
+---
+
+## 🛠️ Future Enhancements (Ideas)
+- Push notification reminders
+- Export/import tasks as `.json` or `.csv`
+- Drag-and-drop task reordering
+
+---
+
+## ❤️ Author
+
+Made with care by [Chandan98S](https://github.com/Chandan98S)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
